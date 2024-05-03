@@ -21,3 +21,4 @@
 
 5. Instalamos extension para Git:
     GitLens -Git supercharget
+    
