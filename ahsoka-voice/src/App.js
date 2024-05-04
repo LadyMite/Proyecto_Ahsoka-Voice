@@ -1,8 +1,8 @@
-import AchievementCreate from './components/achievement/AchievementCreate'
+import AchievementList from './components/achievement/AchievementList';
 
 function App() {
   return (
-    <AchievementCreate/>
+    <AchievementList/>
     
   );
 }
