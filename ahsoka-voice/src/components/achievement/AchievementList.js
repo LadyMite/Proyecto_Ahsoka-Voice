@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "../../styles/A_List.css";
 import { Link } from "react-router-dom";
+
+import AddIcon from '@mui/icons-material/Add';
+import EditIcon from '@mui/icons-material/Edit';
+import DeleteIcon from '@mui/icons-material/Delete';
+import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
+
 //import AchievementList from './components/achievement/AchievementList';
 //import AchievementAdd from './components/achievement/AchievementAdd';
 //import axios from 'axios';
@@ -26,7 +32,7 @@ export default function AchievementList() {
     <div className="container">
 
         <Link to="/añadir" className="btn">
-          Agregar
+        <AddIcon/>Agregar
         </Link>
 
       <h1>Achievement List</h1>
@@ -41,7 +47,7 @@ export default function AchievementList() {
               <th className="column">Imagen</th>
               <th className="column">Id Usuario</th>
               <th className="column">Id Area</th>
-              <th className="column">Acciones</th>
+              <th className="column-actions">Acciones</th>
             </tr>
           </thead>
 
@@ -55,9 +61,9 @@ export default function AchievementList() {
               <td>1</td>
               <td>1</td>
               <td>
-                <button>Editar</button>
-                <button>Eliminar</button>
-                <button>Ocultar</button>
+                <button className="btn-edit"><EditIcon/>Editar</button>
+                <button className="btn-delete"><DeleteIcon/>Eliminar</button>
+                <button className="btn-hide"><VisibilityOffIcon/>Ocultar</button>
               </td>
             </tr>
 
@@ -69,10 +75,10 @@ export default function AchievementList() {
               <td>imagen2.png</td>
               <td>2</td>
               <td>2</td>
-              <td>
-                <button>Editar</button>
-                <button>Eliminar</button>
-                <button>Ocultar</button>
+              <td >
+                <button className="btn-edit"><EditIcon/>Editar</button>
+                <button className="btn-delete"><DeleteIcon/>Eliminar</button>
+                <button className="btn-hide"><VisibilityOffIcon/>Ocultar</button>
               </td>
             </tr>
           </tbody>
