@@ -3,10 +3,10 @@ import "../../styles/A_List.css";
 import { Link } from "react-router-dom";
 //import AchievementList from './components/achievement/AchievementList';
 //import AchievementAdd from './components/achievement/AchievementAdd';
-import axios from 'axios';
+//import axios from 'axios';
 
 export default function AchievementList() {
-
+/*
   const UrlBase = "http://localhost:8080/....";
 
   const [achievement, setAchievement] = useState([]); //para monitorear los cambios del arreglo
@@ -20,15 +20,15 @@ export default function AchievementList() {
     console.log("Resultado de la carga de logros")
     console.log(resultado.data);
     setAchievement(resultado.data);
-  }
+  }*/
 
   return (
     <div className="container">
-      <button>
+
         <Link to="/añadir" className="btn">
           Agregar
         </Link>
-      </button>
+
       <h1>Achievement List</h1>
       <div>
         <table className="table">
